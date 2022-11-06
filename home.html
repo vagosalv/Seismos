@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seismoi</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+
+
+
+</head>
+<body>
+    <div id="map">
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBPerAVk4dsvhGH1Rffkk62IbjsNEtlVk&callback=initMap&v=weekly"
+            defer></script>
+    </div>
+    
+    <canvas id="myChart">
+        <script src="./scripts/chart.js"></script> 
+    </canvas>
+    <button onclick="getData()">Push</button>
+</body>
+</html>
